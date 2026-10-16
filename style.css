@@ -1,0 +1,635 @@
+
+/* homepage */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    color: white;
+}
+
+/* Homepage background */
+.homepage {
+    min-height: 100vh;
+    min-height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 8%;
+
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(4, 12, 27, 0.85),
+            rgba(4, 12, 27, 0.15)
+        ),
+        url("images/ship-background.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Homepage text */
+.home-content {
+    max-width: 650px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.subtitle {
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #e5bd83;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: clamp(42px, 6vw, 85px);
+    letter-spacing: 3px;
+    line-height: 1.1;
+    margin-bottom: 25px;
+    text-shadow: 2px 4px 15px rgba(0, 0, 0, 0.6);
+}
+
+.description {
+    font-size: 20px;
+    line-height: 1.7;
+    margin-bottom: 35px;
+    color: #e2e2e2;
+}
+
+/* Play button */
+.play-button {
+    display: inline-block;
+    padding: 16px 55px;
+    border: 1px solid #e5bd83;
+    border-radius: 4px;
+    background-color: rgba(12, 25, 43, 0.7);
+    color: #f6d7a6;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+    transition: 0.3s ease;
+    box-shadow: 0 0 15px rgba(229, 189, 131, 0.2);
+}
+
+.play-button:hover,
+.play-button:focus-visible {
+    background-color: #e5bd83;
+    color: #101c2e;
+    box-shadow: 0 0 25px rgba(229, 189, 131, 0.7);
+    transform: translateY(-3px);
+}
+
+/* Entrance animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .homepage {
+        padding: 30px;
+        background-position: 60% center;
+    }
+
+    .subtitle {
+        font-size: 12px;
+        letter-spacing: 3px;
+    }
+
+    .description {
+        font-size: 17px;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .home-content {
+        animation: none;
+    }
+
+    .play-button {
+        transition: none;
+    }
+}
+
+/* PAGE 2: CASE INTRODUCTION */
+.intro-body {
+    overflow: hidden;
+}
+
+.introduction-page {
+    position: relative;
+    height: 100vh;
+    height: 100svh;
+    overflow: hidden;
+    background-color: #071321;
+}
+
+/* Header */
+.intro-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+.intro-header p {
+    color: #e5bd83;
+    letter-spacing: 3px;
+    font-size: 13px;
+}
+
+.back-link {
+    color: white;
+    text-decoration: none;
+}
+
+.back-link:hover,
+.back-link:focus-visible {
+    color: #e5bd83;
+}
+
+/* Hide radio buttons visually */
+.introduction-page > input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+/* Full-screen scenes */
+.intro-scene {
+    position: absolute;
+    inset: 0;
+    padding: 110px 10% 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-size: cover;
+    background-position: center;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(15px);
+
+    transition:
+        opacity 0.6s ease,
+        transform 0.6s ease,
+        visibility 0.6s;
+}
+
+/* Scene backgrounds */
+.scene-one {
+    background-image:
+        linear-gradient(
+            rgba(4, 12, 27, 0.75),
+            rgba(4, 12, 27, 0.85)
+        ),
+        url("images/ship-background.png");
+}
+
+
+.scene-two {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(4, 12, 27, 0.88),
+            rgba(4, 12, 27, 0.35)
+        ),
+        url("images/corridor-background.png");
+}
+
+.scene-three {
+    background-image:
+        linear-gradient(
+            to right,
+            rgba(4, 12, 27, 0.88),
+            rgba(4, 12, 27, 0.35)
+        ),
+        url("images/investigation-background.png");
+}
+
+
+/* Show only the selected scene */
+#scene1:checked ~ .scene-one,
+#scene2:checked ~ .scene-two,
+#scene3:checked ~ .scene-three {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+/* Story text */
+.intro-scene h1,
+.intro-scene h2 {
+    font-size: clamp(36px, 5vw, 65px);
+    margin-bottom: 30px;
+    line-height: 1.15;
+}
+
+.intro-scene p {
+    max-width: 650px;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+    color: #e0e4e8;
+}
+
+/* Navigation buttons */
+.scene-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.scene-button {
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.scene-back {
+    color: #e5bd83;
+    cursor: pointer;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.scene-back:hover {
+    color: white;
+}
+
+.scene-back:focus-visible,
+.scene-button:focus-visible {
+    outline: 3px solid #e5bd83;
+    outline-offset: 4px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .intro-header {
+        padding: 20px;
+    }
+
+    .intro-header p {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .intro-scene {
+        padding: 100px 25px 50px;
+        overflow-y: auto;
+    }
+
+    .intro-scene p {
+        font-size: 17px;
+    }
+
+    .scene-actions {
+        gap: 20px;
+    }
+}
+
+/* Reduced motion accessibility */
+@media (prefers-reduced-motion: reduce) {
+    .intro-scene {
+        transition: none;
+    }
+}
+
+
+
+/* PAGE 3: SUSPECTS */
+
+.suspects-body {
+    background-color: #081421;
+    color: white;
+    min-height: 100vh;
+}
+
+/* Header */
+.suspects-header {
+    padding: 25px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgba(229, 189, 131, 0.2);
+}
+
+.suspects-header p {
+    color: #e5bd83;
+    font-size: 13px;
+    letter-spacing: 3px;
+}
+
+/* Page layout */
+.suspects-page {
+    max-width: 1200px;
+    margin: auto;
+    padding: 65px 6%;
+}
+
+.suspects-intro {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.suspects-intro h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    margin-bottom: 20px;
+}
+
+.suspects-intro > p:last-child {
+    color: #c9d0d8;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* FILE CARDS*/
+
+.suspects-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+}
+
+/* Individual file */
+.suspect-card {
+    min-height: 265px;
+    background-color: #142338;
+    border: 1px solid rgba(229, 189, 131, 0.45);
+    border-radius: 6px;
+    overflow: hidden;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.suspect-card:hover {
+    transform: translateY(-6px);
+    border-color: #e5bd83;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* File information */
+.suspect-info {
+    padding: 30px;
+}
+
+/* File number */
+.file-number {
+    color: #aeb9c5;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 30px;
+}
+
+/* Role */
+.suspect-role {
+    color: #e5bd83;
+    font-size: 12px;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+/* Suspect name */
+.suspect-info h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* View File link */
+.file-button {
+    display: block;
+    width: 100%;
+    padding: 18px 0 0;
+
+    color: #e5bd83;
+    background: transparent;
+    border: none;
+    border-top: 1px solid rgba(229, 189, 131, 0.35);
+
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 2px;
+
+    transition: color 0.3s ease;
+}
+
+.file-button:hover,
+.file-button:focus-visible {
+    color: white;
+}
+
+/* Bottom navigation */
+.suspects-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 55px;
+}
+
+/* SUSPECT FILE POP-UPS */
+
+/* Dark overlay */
+.file-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.85);
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition: opacity 0.3s ease,
+                visibility 0.3s ease;
+}
+
+/* Show selected file */
+.file-overlay:target {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+/* Centered suspect file */
+.file-panel {
+    width: 100%;
+    max-width: 650px;
+    max-height: 90vh;
+    overflow-y: auto;
+
+    padding: 40px;
+    background-color: #142338;
+    border: 1px solid #e5bd83;
+    border-radius: 10px;
+
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+
+    transform: scale(0.92);
+    transition: transform 0.3s ease;
+}
+
+.file-overlay:target .file-panel {
+    transform: scale(1);
+}
+
+/* File typography */
+.file-heading {
+    color: #e5bd83;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.file-panel h2 {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.file-panel h3 {
+    color: #e5bd83;
+    font-size: 17px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.file-panel p {
+    color: #d7dfe8;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+.file-panel .suspect-role {
+    color: #e5bd83;
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.file-statement {
+    font-style: italic;
+    border-left: 3px solid #e5bd83;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+
+/* Close File button */
+.close-file {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 13px 25px;
+
+    background-color: #e5bd83;
+    color: #081421;
+    text-decoration: none;
+    border-radius: 4px;
+
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+    transition: background-color 0.3s ease;
+}
+
+.close-file:hover,
+.close-file:focus-visible {
+    background-color: white;
+}
+
+/* Keyboard focus */
+.file-button:focus-visible,
+.close-file:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 4px;
+}
+
+/*RESPONSIVE DESIGN*/
+
+/* Mobile */
+@media (max-width: 600px) {
+    .suspects-header {
+        padding: 20px;
+    }
+
+    .suspects-header p {
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    .suspects-page {
+        padding: 40px 20px;
+    }
+
+    .suspects-intro {
+        margin-bottom: 35px;
+    }
+
+    .suspects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .suspect-info {
+        padding: 25px;
+    }
+
+    .suspect-info h2 {
+        font-size: 28px;
+    }
+
+    .file-panel {
+        padding: 25px;
+        max-height: 85vh;
+    }
+
+    .file-panel h2 {
+        font-size: 30px;
+    }
+
+    .file-panel p {
+        font-size: 14px;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .suspect-card,
+    .file-overlay,
+    .file-panel,
+    .file-button,
+    .close-file {
+        transition: none;
+    }
+}

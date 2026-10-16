@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suspects | The Last Voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="suspects-body">
+
+    <header class="suspects-header">
+        <a href="introduction.html" class="back-link">
+            ← Back to Introduction
+        </a>
+        <p>THE LAST VOYAGE</p>
+    </header>
+
+    <main class="suspects-page">
+
+        <div class="suspects-intro">
+            <p class="subtitle">CONFIDENTIAL CASE FILES</p>
+            <h1>Meet the Suspects</h1>
+            <p>
+                Four people had reasons to fear Richard Vale.
+                Examine their statements and uncover their secrets.
+            </p>
+        </div>
+
+        <!-- Four suspect cards -->
+        <section id="suspects" class="suspects-grid"
+                 aria-label="Suspect profiles">
+
+            <!-- Adrian Cole -->
+            <article class="suspect-card">
+                <div class="suspect-info">
+                    <p class="file-number">FILE 01 / CONFIDENTIAL</p>
+                    <p class="suspect-role">BUSINESS PARTNER</p>
+                    <h2>Adrian Cole</h2>
+                    <a href="#adrian-file" class="file-button">
+                        VIEW FILE →
+                    </a>
+                </div>
+            </article>
+
+            <!-- Evelyn Vale -->
+            <article class="suspect-card">
+                <div class="suspect-info">
+                    <p class="file-number">FILE 02 / CONFIDENTIAL</p>
+                    <p class="suspect-role">VICTIM'S WIFE</p>
+                    <h2>Evelyn Vale</h2>
+                    <a href="#evelyn-file" class="file-button">
+                        VIEW FILE →
+                    </a>
+                </div>
+            </article>
+
+            <!-- Daniel Mercer -->
+            <article class="suspect-card">
+                <div class="suspect-info">
+                    <p class="file-number">FILE 03 / CONFIDENTIAL</p>
+                    <p class="suspect-role">PERSONAL ASSISTANT</p>
+                    <h2>Daniel Mercer</h2>
+                    <a href="#daniel-file" class="file-button">
+                        VIEW FILE →
+                    </a>
+                </div>
+            </article>
+
+            <!-- Marcus Reed -->
+            <article class="suspect-card">
+                <div class="suspect-info">
+                    <p class="file-number">FILE 04 / CONFIDENTIAL</p>
+                    <p class="suspect-role">SECURITY OFFICER</p>
+                    <h2>Marcus Reed</h2>
+                    <a href="#marcus-file" class="file-button">
+                        VIEW FILE →
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- Navigation -->
+        <nav class="suspects-navigation" aria-label="Case navigation">
+            <a href="introduction.html" class="scene-back">
+                ← BACK
+            </a>
+            <a href="evidence.html" class="play-button">
+                EXAMINE EVIDENCE →
+            </a>
+        </nav>
+
+        <!-- Adrian's pop-up file -->
+        <section id="adrian-file" class="file-overlay"
+                 aria-label="Adrian Cole's suspect file">
+            <div class="file-panel">
+                <p class="file-heading">CONFIDENTIAL — SUSPECT FILE</p>
+                <h2>Adrian Cole</h2>
+                <p class="suspect-role">BUSINESS PARTNER</p>
+
+                <h3>Background</h3>
+                <p>
+                    Adrian is Richard Vale's longtime business
+                    partner. Their company has recently faced
+                    questions about unexplained financial transfers.
+                </p>
+
+                <h3>Possible Motive</h3>
+                <p>
+                    A business dispute may have threatened
+                    Adrian's position and reputation.
+                </p>
+
+                <h3>Statement</h3>
+                <p class="file-statement">
+                    "I had no idea Richard was aboard this ship.
+                    I certainly didn't meet him that night."
+                </p>
+
+                <a href="#suspects" class="close-file">
+                    CLOSE FILE
+                </a>
+            </div>
+        </section>
+
+        <!-- Evelyn's pop-up file -->
+        <section id="evelyn-file" class="file-overlay"
+                 aria-label="Evelyn Vale's suspect file">
+            <div class="file-panel">
+                <p class="file-heading">CONFIDENTIAL — SUSPECT FILE</p>
+                <h2>Evelyn Vale</h2>
+                <p class="suspect-role">VICTIM'S WIFE</p>
+
+                <h3>Background</h3>
+                <p>
+                    Evelyn is Richard's wife. Their marriage
+                    has become strained, and investigators
+                    believe she may be keeping secrets.
+                </p>
+
+                <h3>Possible Motive</h3>
+                <p>
+                    Financial concerns and marital problems
+                    may have created tension between them.
+                </p>
+
+                <h3>Statement</h3>
+                <p class="file-statement">
+                    "I spent part of the evening with Richard
+                    watching a movie. I left his suite
+                    before the murder."
+                </p>
+
+                <a href="#suspects" class="close-file">
+                    CLOSE FILE
+                </a>
+            </div>
+        </section>
+
+        <!-- Daniel's pop-up file -->
+        <section id="daniel-file" class="file-overlay"
+                 aria-label="Daniel Mercer's suspect file">
+            <div class="file-panel">
+                <p class="file-heading">CONFIDENTIAL — SUSPECT FILE</p>
+                <h2>Daniel Mercer</h2>
+                <p class="suspect-role">PERSONAL ASSISTANT</p>
+
+                <h3>Background</h3>
+                <p>
+                    Daniel has worked closely with Richard
+                    for years and has access to confidential
+                    company information.
+                </p>
+
+                <h3>Possible Motive</h3>
+                <p>
+                    Daniel may have feared losing his position
+                    if certain company secrets came to light.
+                </p>
+
+                <h3>Statement</h3>
+                <p class="file-statement">
+                    "I never entered Mr. Vale's suite that
+                    night. And I didn't even know Adrian
+                    Cole was on this ship."
+                </p>
+
+                <a href="#suspects" class="close-file">
+                    CLOSE FILE
+                </a>
+            </div>
+        </section>
+
+        <!-- Marcus's pop-up file -->
+        <section id="marcus-file" class="file-overlay"
+                 aria-label="Marcus Reed's suspect file">
+            <div class="file-panel">
+                <p class="file-heading">CONFIDENTIAL — SUSPECT FILE</p>
+                <h2>Marcus Reed</h2>
+                <p class="suspect-role">SECURITY OFFICER</p>
+
+                <h3>Background</h3>
+                <p>
+                    Marcus works in ship security. Years ago,
+                    Richard blamed him for a security failure
+                    that cost Marcus his previous job.
+                </p>
+
+                <h3>Possible Motive</h3>
+                <p>
+                    Marcus may still resent Richard for
+                    damaging his career and financial stability.
+                </p>
+
+                <h3>Statement</h3>
+                <p class="file-statement">
+                    "I was completing my security rounds.
+                    I had no reason to enter Mr. Vale's suite."
+                </p>
+
+                <a href="#suspects" class="close-file">
+                    CLOSE FILE
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
