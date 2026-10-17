@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,17 +21,20 @@
     <div class="suspects-intro">
         <p class="subtitle">CONFIDENTIAL EVIDENCE ARCHIVE</p>
         <h1>Collected Evidence</h1>
-        <p> Every clue tells part of the story.
-            Some gets us closer to unveiling the truth.
-            Some divert us far from the truth.
+        <p>
+            Every clue tells part of the story.
+            Some bring us closer to the truth.
+            Others lead us in the wrong direction.
         </p>
     </div>
+
     <section id="evidence" class="suspects-grid" aria-label="Evidence Archive">
+
         <article class="suspect-card">
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 01</p>
                 <h2>Monogrammed Handkerchief</h2>
-                <a href="#handkerchief-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#handkerchief-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -38,7 +42,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 02</p>
                 <h2>Burned Financial Document</h2>
-                <a href="#financial-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#financial-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -46,7 +50,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 03</p>
                 <h2>Access Card Log</h2>
-                <a href="#access-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#access-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -54,7 +58,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 04</p>
                 <h2>Security Jacket</h2>
-                <a href="#jacket-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#jacket-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -62,7 +66,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 05</p>
                 <h2>Silver Cufflink</h2>
-                <a href="#cufflink-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#cufflink-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -70,7 +74,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 06</p>
                 <h2>Meeting Message</h2>
-                <a href="#message-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#message-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -78,7 +82,7 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 07</p>
                 <h2>Witness Statement</h2>
-                <a href="#witness-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#witness-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
 
@@ -86,9 +90,10 @@
             <div class="suspect-info">
                 <p class="file-number">EVIDENCE 08</p>
                 <h2>Secret Messages</h2>
-                <a href="#secret-file" class="file-button">VIEW EVIDENCE → </a>
+                <a href="#secret-file" class="file-button">VIEW EVIDENCE →</a>
             </div>
         </article>
+
     </section>
 
     <nav class="suspects-navigation">
@@ -96,152 +101,208 @@
         <a href="caseboard.html" class="play-button">CASE BOARD →</a>
     </nav>
 
+    <!-- Evidence 01 -->
     <section id="handkerchief-file" class="file-overlay" aria-label="Monogrammed Handkerchief">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 01</p>
             <h2>Monogrammed Handkerchief</h2>
+
             <h3>Location Found</h3>
-            <p>Recovered from Richard Vale's private suite, folded beneath a chair beside the window.</p>
+            <p>A white handkerchief was recovered beneath a chair in Richard Vale's private suite.</p>
 
             <h3>Description</h3>
-            <p>A white embroidered handkerchief with the initials "E.V."</p>
+            <p>The handkerchief has the initials "E.V." embroidered in one corner.</p>
 
             <h3>Investigator's Note</h3>
             <p class="file-statement">
-                The owner clearly entered through the suite at some point, but this does not determine when the item was left behind.
+                The handkerchief suggests Evelyn Vale visited the suite, but it does not establish when she was there.
             </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
-    <section id="financial-file" class="file-overlay">
+    <!-- Evidence 02 -->
+    <section id="financial-file" class="file-overlay" aria-label="Burned Financial Document">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 02</p>
             <h2>Burned Financial Document</h2>
-           
-            <h3>Description</h3>
-            <p>Many half-burned accounting records were recovered from the suite fireplace.</p>
 
-            <h3>Observation</h3>
-            <p>Although damaged, the remaining pages refer unusual company transfers worth millions of dollars.</p>
-        
-            <p class="file-statement">
-                Someone absolutely wanted these documents gone before the investigators arrived.
+            <h3>Location Found</h3>
+            <p>Partially burned company financial records were recovered from the fireplace in Richard Vale's suite.</p>
+
+            <h3>Description</h3>
+            <p>
+                The surviving pages show several unauthorized transfers involving millions of dollars.
+                Adrian Cole's name appears on the records connected to these transactions.
             </p>
+
+            <h3>Investigator's Note</h3>
+            <p class="file-statement">
+                Richard may have discovered that money was being taken from his company.
+                The damaged documents raise questions about Adrian's involvement.
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
-    <section id="access-file" class="file-overlay">
+    <!-- Evidence 03 -->
+    <section id="access-file" class="file-overlay" aria-label="Access Card Log">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 03</p>
             <h2>Access Card Log</h2>
+
             <h3>Security Record</h3>
-            <p>Electronic logs show Daniel Mercer's employee access card unlocked Richard Vale's suite at exactly 11:04PM.</p>
-           
-            <h3>Observation</h3>
-            <p>No additional entries were recorded until security discovered the body.</p>
-        
-            <p class="file-statement">
-                The access card links Daniel to the suite - but not necessarily the murder.
+            <p>
+                Electronic security logs show that Daniel Mercer's employee access card
+                unlocked Richard Vale's suite at exactly 11:04 PM.
             </p>
+
+            <h3>Observation</h3>
+            <p>
+                The security system recorded the card number, but it could not identify
+                who was physically carrying the card.
+            </p>
+
+            <p class="file-statement">
+                Was Daniel the person who entered the suite, or could someone else have used his card?
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
+    <!-- Evidence 04 -->
     <section id="jacket-file" class="file-overlay" aria-label="Security Jacket">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 04</p>
             <h2>Security Jacket</h2>
+
             <h3>Location Found</h3>
-            <p>A folded, ship security jacket was discovered inside a maintenance closet near Richard Vale's suite.</p>
-           
+            <p>
+                A ship security jacket was discovered on the floor near the entrance
+                to Richard Vale's private suite.
+            </p>
+
             <h3>Description</h3>
-            <p>The jacket belongs to the ship's security department and is assigned to Marcus Reed.</p>
+            <p>
+                The jacket was identified as belonging to Marcus Reed,
+                a member of the ship's security team.
+            </p>
 
             <h3>Investigator's Note</h3>
-        
             <p class="file-statement">
-                Its location raises suspicion, but there is no proof th jacket was worn during the murder.
+                The jacket places Marcus under suspicion, but there is no evidence
+                confirming that he was wearing it near the time of the murder.
             </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
+    <!-- Evidence 05 -->
     <section id="cufflink-file" class="file-overlay" aria-label="Silver Cufflink">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 05</p>
             <h2>Silver Cufflink</h2>
+
             <h3>Location Found</h3>
-            <p>Recovered beneath Richard Vale's desk during the crime scene investigation.</p>
-           
+            <p>A silver cufflink was recovered beneath Richard Vale's desk during the investigation.</p>
+
             <h3>Description</h3>
-            <p>A polished silver cufflink engraved with the initials "A.C."</p>
+            <p>The cufflink is engraved with the initials "A.C."</p>
 
             <h3>Investigator's Note</h3>
-            <p>Investigators believe that the cufflink may have been torn loose during a physical struggle.</p>
-        
+            <p class="file-statement">
+                Investigators believe the cufflink may have been torn from someone's clothing during a struggle.
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
-    
+
+    <!-- Evidence 06 -->
     <section id="message-file" class="file-overlay" aria-label="Meeting Message">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 06</p>
             <h2>Meeting Message</h2>
-           
+
             <h3>Description</h3>
-            <p>A message recovered from Richard Vale's phone scheduled a private meeting in his suite at 11:00PM.</p>
+            <p>
+                Investigators recovered a message from Richard Vale's phone
+                arranging a private meeting in his suite at 10:45 PM.
+            </p>
 
             <h3>Message Text</h3>
-            <p class="file-statement">"Meet me in my suite at 11pm. We need to settle this before we reach port."</p>
+            <p class="file-statement">
+                "Meet me in my suite at 10:45 PM. We need to settle this before we reach port."
+            </p>
+
             <h3>Investigator's Note</h3>
-            <p>The intended recipient's name is partially visible, but not immediately obvious.</p>
-        
+            <p>
+                The message was addressed to Adrian Cole.
+                Investigators are examining what Richard wanted to discuss with him.
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
-    <section id="witness-file" class="file-overlay">
+    <!-- Evidence 07 -->
+    <section id="witness-file" class="file-overlay" aria-label="Witness Statement">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 07</p>
             <h2>Witness Statement</h2>
-           
-            <h3>Statement</h3>
-            <p>A lounge attendant reported seeing two men arguing loudly shortly before the murder.</p>
 
-            <h3>Observation</h3>
-            <p>One appeared distressed while the other left the area in a hurry.</p>
-        
-            <p class="file-statement">
-                The witness later identified the men as Adrian Cole and Daniel Mercer.
+            <h3>Statement</h3>
+            <p>
+                A lounge attendant reported witnessing a heated argument
+                between two men on the evening of Richard Vale's murder.
             </p>
+
+            <h3>Witness Identification</h3>
+            <p>
+                The attendant identified the men as Adrian Cole and Daniel Mercer.
+                Their disagreement appeared serious, and both were visibly angry.
+            </p>
+
+            <p class="file-statement">
+                Investigators have not yet established what caused the argument.
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
 
-    <section id="secret-file" class="file-overlay">
+    <!-- Evidence 08 -->
+    <section id="secret-file" class="file-overlay" aria-label="Secret Messages">
         <div class="file-panel">
             <p class="file-heading">EVIDENCE FILE 08</p>
             <h2>Secret Messages</h2>
-           
-            <h3>Description</h3>
-            <p>A hidden conversation found from deleted phone messages reveals an undisclosed relationship.</p>
 
-            <h3>Recovered Messages</h3>
+            <h3>Description</h3>
+            <p>
+                Recovered deleted messages reveal that Evelyn Vale
+                and Adrian Cole were secretly involved in a romantic relationship.
+            </p>
+
+            <h3>Recovered Message</h3>
             <p class="file-statement">
-                "Richard cant know abt us. Once this trip is over, everything will change."
+                "Richard can't know about us. Once this trip is over, everything will change."
             </p>
 
             <h3>Investigator's Note</h3>
-            <p>The exchange confirms a secret affair but does not directly identify the murderer.</p>
-        
+            <p>
+                The messages reveal a possible motive for both Evelyn and Adrian.
+                However, the affair alone does not establish who murdered Richard.
+            </p>
+
             <a href="#evidence" class="close-file">CLOSE FILE</a>
         </div>
     </section>
+
 </main>
 
-
 </body>
-
 </html>
