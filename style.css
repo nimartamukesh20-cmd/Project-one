@@ -137,7 +137,6 @@ h1 {
     background-color: #071321;
 }
 
-/* Header */
 .intro-header {
     position: absolute;
     top: 0;
@@ -166,7 +165,6 @@ h1 {
     color: #e5bd83;
 }
 
-/* Hide radio buttons visually */
 .introduction-page > input[type="radio"] {
     position: absolute;
     opacity: 0;
@@ -174,7 +172,6 @@ h1 {
     height: 1px;
 }
 
-/* Full-screen scenes */
 .intro-scene {
     position: absolute;
     inset: 0;
@@ -199,7 +196,6 @@ h1 {
         visibility 0.6s;
 }
 
-/* Scene backgrounds */
 .scene-one {
     background-image:
         linear-gradient(
@@ -230,8 +226,6 @@ h1 {
         url("images/investigation-background.png");
 }
 
-
-/* Show only the selected scene */
 #scene1:checked ~ .scene-one,
 #scene2:checked ~ .scene-two,
 #scene3:checked ~ .scene-three {
@@ -241,7 +235,6 @@ h1 {
     transform: translateY(0);
 }
 
-/* Story text */
 .intro-scene h1,
 .intro-scene h2 {
     font-size: clamp(36px, 5vw, 65px);
@@ -257,7 +250,6 @@ h1 {
     color: #e0e4e8;
 }
 
-/* Navigation buttons */
 .scene-actions {
     display: flex;
     align-items: center;
@@ -288,7 +280,6 @@ h1 {
     outline-offset: 4px;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 600px) {
     .intro-header {
         padding: 20px;
@@ -313,7 +304,6 @@ h1 {
     }
 }
 
-/* Reduced motion accessibility */
 @media (prefers-reduced-motion: reduce) {
     .intro-scene {
         transition: none;
@@ -323,14 +313,13 @@ h1 {
 
 
 /* PAGE 3: SUSPECTS */
-
 .suspects-body {
     background-color: #081421;
     color: white;
     min-height: 100vh;
 }
 
-/* Header */
+
 .suspects-header {
     padding: 25px 6%;
     display: flex;
@@ -345,7 +334,7 @@ h1 {
     letter-spacing: 3px;
 }
 
-/* Page layout */
+
 .suspects-page {
     max-width: 1200px;
     margin: auto;
@@ -368,15 +357,12 @@ h1 {
     line-height: 1.7;
 }
 
-/* FILE CARDS*/
-
 .suspects-grid {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 25px;
 }
 
-/* Individual file */
 .suspect-card {
     min-height: 265px;
     background-color: #142338;
@@ -395,12 +381,10 @@ h1 {
     box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
 }
 
-/* File information */
 .suspect-info {
     padding: 30px;
 }
 
-/* File number */
 .file-number {
     color: #aeb9c5;
     font-size: 12px;
@@ -408,7 +392,6 @@ h1 {
     margin-bottom: 30px;
 }
 
-/* Role */
 .suspect-role {
     color: #e5bd83;
     font-size: 12px;
@@ -416,13 +399,11 @@ h1 {
     margin-bottom: 12px;
 }
 
-/* Suspect name */
 .suspect-info h2 {
     font-size: 32px;
     margin-bottom: 30px;
 }
 
-/* View File link */
 .file-button {
     display: block;
     width: 100%;
@@ -445,7 +426,6 @@ h1 {
     color: white;
 }
 
-/* Bottom navigation */
 .suspects-navigation {
     display: flex;
     justify-content: space-between;
@@ -456,8 +436,6 @@ h1 {
 }
 
 /* SUSPECT FILE POP-UPS */
-
-/* Dark overlay */
 .file-overlay {
     position: fixed;
     inset: 0;
@@ -478,14 +456,13 @@ h1 {
                 visibility 0.3s ease;
 }
 
-/* Show selected file */
+
 .file-overlay:target {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
 }
 
-/* Centered suspect file */
 .file-panel {
     width: 100%;
     max-width: 650px;
@@ -507,7 +484,6 @@ h1 {
     transform: scale(1);
 }
 
-/* File typography */
 .file-heading {
     color: #e5bd83;
     font-size: 12px;
@@ -577,7 +553,6 @@ h1 {
 }
 
 /*RESPONSIVE DESIGN*/
-
 /* Mobile */
 @media (max-width: 600px) {
     .suspects-header {
@@ -635,10 +610,7 @@ h1 {
 }
 
 
-/* ===========================
-   EVIDENCE PAGE
-=========================== */
-
+/* EVIDENCE PAGE */
 .evidence-body{
     background:#08111d;
     color:#f5f1e8;
@@ -808,10 +780,7 @@ h1 {
 }
 
 
-/* ===========================
-   CASE BOARD PAGE
-=========================== */
-
+/* CASEBOARD PAGE */
 .caseboard-body{
     background:#08111d;
     color:#f5f1e8;
@@ -967,9 +936,7 @@ h1 {
 
 }
 
-/* ==========================================
-   FINAL ACCUSATION PAGE
-========================================== */
+/* ACCUSATION PAGE */
 
 .accusation-body{
     background:#08111d;
