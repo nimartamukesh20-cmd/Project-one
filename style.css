@@ -966,3 +966,163 @@ h1 {
     }
 
 }
+
+/* ==========================================
+   FINAL ACCUSATION PAGE
+========================================== */
+
+.accusation-body{
+    background:#08111d;
+    color:#f5f1e8;
+    min-height:100vh;
+}
+
+.accusation-page{
+    width:min(1200px,90%);
+    margin:40px auto 80px;
+}
+
+.accusation-page input[type="radio"]{
+    display:none;
+}
+
+.accusation-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    margin:50px 0;
+}
+
+.accuse-card{
+    background:rgba(255,255,255,.05);
+    border:1px solid rgba(216,180,106,.25);
+    border-radius:12px;
+    padding:30px;
+    cursor:pointer;
+    transition:.3s;
+    text-align:center;
+}
+
+.accuse-card:hover{
+    transform:translateY(-8px);
+    border-color:#d8b46a;
+    box-shadow:0 10px 25px rgba(0,0,0,.45);
+}
+
+.accuse-card h2{
+    color:white;
+    margin:15px 0;
+}
+
+.accuse-card .suspect-role{
+    color:#d8b46a;
+    text-transform:uppercase;
+    font-size:.9rem;
+    letter-spacing:1px;
+    margin-bottom:20px;
+}
+
+.accuse-card span{
+    display:inline-block;
+    margin-top:15px;
+    color:#d8b46a;
+    font-weight:bold;
+}
+
+#adrian:checked ~ .accusation-grid label[for="adrian"],
+#evelyn:checked ~ .accusation-grid label[for="evelyn"],
+#daniel:checked ~ .accusation-grid label[for="daniel"],
+#marcus:checked ~ .accusation-grid label[for="marcus"]{
+
+    border:2px solid #d8b46a;
+    background:rgba(216,180,106,.12);
+}
+
+.result-panel{
+    display:none;
+    margin-top:40px;
+    padding:35px;
+    background:rgba(255,255,255,.05);
+    border:2px solid rgba(216,180,106,.3);
+    border-radius:12px;
+    animation:fadeIn .4s ease;
+}
+
+.result-panel h2{
+    color:#d8b46a;
+    margin-bottom:20px;
+}
+
+.result-panel h3{
+    margin-top:25px;
+    color:#d8b46a;
+}
+
+.result-panel p{
+    line-height:1.8;
+    margin-bottom:18px;
+}
+
+.result-buttons{
+    margin-top:35px;
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+#adrian:checked ~ #adrian-result{
+    display:block;
+}
+#evelyn:checked ~ #evelyn-result{
+    display:block;
+}
+#daniel:checked ~ #daniel-result{
+    display:block;
+}
+#marcus:checked ~ #marcus-result{
+    display:block;
+}
+
+.accusation-page .suspects-navigation{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:70px;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+@media (max-width:768px){
+    .accusation-grid{
+        grid-template-columns:1fr;
+    }
+
+    .result-buttons{
+        flex-direction:column;
+    }
+
+    .accusation-page .suspects-navigation{
+        flex-direction:column;
+    }
+
+    .accusation-page .scene-back,
+    .accusation-page .play-button{
+        width:100%;
+        text-align:center;
+    }
+
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Accusation | The Last Voyage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="accusation-body">
+
+<header class="suspects-header">
+    <a href="caseboard.html" class="back-link">← Back to Case Board</a>
+    <p>THE LAST VOYAGE</p>
+</header>
+
+<main class="accusation-page">
+    <div class="suspects-intro">
+        <p class="subtitle">FINAL DECISION</p>
+        <h1>Who murdered Richard Vale?</h1>
+        <p>You have examined the suspects, found every clue, and connected the evidence. Now make your final accusation.</p>
+    </div>
+
+    <input type="radio" name="suspect" id="adrian">
+    <input type="radio" name="suspect" id="evelyn">
+    <input type="radio" name="suspect" id="daniel">
+    <input type="radio" name="suspect" id="marcus">
+
+    <section class="accusation-grid">
+        <label for="adrian" class="accuse-card">
+            <p class="file-number">SUSPECT 01</p>
+            <h2>Adrian Cole</h2>
+            <p class="suspect-role">Business Partner</p>
+            <span class="file-button">MAKE ACCUSATION</span>
+        </label>
+
+        <label for="evelyn" class="accuse-card">
+            <p class="file-number">SUSPECT 02</p>
+            <h2>Evelyn Vale</h2>
+            <p class="suspect-role">Victim's Wife</p>
+            <span class="file-button">MAKE ACCUSATION</span>
+        </label>
+
+        <label for="daniel" class="accuse-card">
+            <p class="file-number">SUSPECT 03</p>
+            <h2>Daniel Mercer</h2>
+            <p class="suspect-role">Personal Assistant</p>
+            <span class="file-button">MAKE ACCUSATION</span>
+        </label>
+
+        <label for="marcus" class="accuse-card">
+            <p class="file-number">SUSPECT 04</p>
+            <h2>Marcus Reed</h2>
+            <p class="suspect-role">Security Officer</p>
+            <span class="file-button">MAKE ACCUSATION</span>
+        </label>
+    </section>
+
+
+    <section class="result-panel" id="adrian-result">
+        <h2>CASE SOLVED!</h2>
+        <p>You correctly identified Adrian Cole as Richard Vale's murderer.</p>
+        <h3>The Complete Explanation:</h3>
+        <p>Richard Vale discovered Adrian had been stealing company funds through confidential information leaked by Daniel Mercer. Richard planned to expose him once the ship reached port.</p>
+        <p>Richard invited Adrian o his suite at 11:00PM to confront him. During a heated argument, Adrian murdered Richard and attempted to hide his involvement.</p>
+        <p>Adrian stole Daniel's access card before the meeting, entered the suite at 11:04PM, then secretly returned the card later to blame Daniel.</p>
+        <p>During the struggle Richard tore a silver cufflink from Adrian's sleeve. Adrian also planted Marcus Reed's security jacket near the crime scene to confuse the investigators.</p>
+        <p>The meeting message, financial records, witness statement, cufflink, and hidden affair - all ultimately point toward Adrian.</p>
+
+        <div class="result-buttons">
+            <a href="index.html" class="play-button">PLAY AGAIN</a>
+        </div>
+    </section>
+
+    <section class="result-panel" id="evelyn-result">
+        <h2>Incorrect Accusation!!!</h2>
+        <p>Evelyn had secrets, including her affair with Adrian, but none of the evidence prove that she murdered Richard.</p>
+        <p>Her handkerchief explains why she was connected to the suite, but that alone was not enough evidence to make her the murderer.</p>
+        <div class="result-buttons">
+            <a href="caseboard.html" class="scene-back">REVIEW CASE BOARD</a>
+        </div>
+    </section>
+
+    <section class="result-panel" id="daniel-result">
+        <h2>Incorrect Accusation!!!</h2>
+        <p>Daniel's access card was used to enter the suite, making him appear guilty.</p>
+        <p>However, later evidence suggests someone else used his stolen access card before returning it.</p>
+        <div class="result-buttons">
+            <a href="caseboard.html" class="scene-back">REVIEW CASE BOARD</a>
+        </div>
+    </section>
+
+    <section class="result-panel" id="marcus-result">
+        <h2>Incorrect Accusation!!!</h2>
+        <p>Marcus had a reason to dislike Richard, but the security jacket found near the suite appears to have been planted.</p>
+        <p>The physical evidence does not support him as the killer.</p>
+        <div class="result-buttons">
+            <a href="caseboard.html" class="scene-back">REVIEW CASE BOARD</a>
+        </div>
+    </section>
+
+    <nav class="suspects-navigation">
+        <a href="caseboard.html" class="scene-back">← BACK</a>
+    </nav>
+    
+</main>
+</body>
+</html>
