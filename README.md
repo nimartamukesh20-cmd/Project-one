@@ -3,13 +3,13 @@
 **CSC 4370 WEB PROGRAMMING**
 
 ---
-## Project Overview 
+# Project Overview 
 The Last Voyage is an investigation-themed interactive website built using only HTML5 and CSS3. 
 Players investigate the murder of wealthy businessman Richard Vale aboard a luxury cruise ship.
 The project focuses on semantic HTML, responsive layouts, CSS animations, reusable components, and accessibility. 
 
 ---
-## Website Pages
+# Website Pages
 - **Home** - Introduces the story and begins the investigation.
 - **Introduction** - Presents the case through a cinematic story sequence. 
 - **Suspects** - Shows confidential suspect profiles with CSS-only file reveals.
@@ -18,7 +18,7 @@ The project focuses on semantic HTML, responsive layouts, CSS animations, reusab
 - **Accusation** - Lets players choose the murderer and reveals the outcome. 
 
 ---
-## Features
+# Features
 - Semantic HTML5
 - External CSS stylesheet
 - Responsive layout
