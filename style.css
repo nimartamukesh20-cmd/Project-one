@@ -1,4 +1,16 @@
-
+:root{
+    --background: #081321;
+    --card: #13233b;
+    --gold: #d6b16b;
+    --gold-light: #f2d7a1;
+    --text: #f8f3eb;
+    --text-light: #c7d2e1;
+    --border: rgba(214,177,107,0.3);
+    --heading-font: "Georgia", serif;
+    --body-font: "Georgia", serif;
+    --radius: 12px;
+    --transition: 0.3s ease;
+}
 /* homepage */
 * {
     margin: 0;
@@ -71,7 +83,7 @@ h1 {
     text-decoration: none;
     font-size: 18px;
     letter-spacing: 4px;
-    transition: 0.3s ease;
+    transition: var(--transition);
     box-shadow: 0 0 15px rgba(229, 189, 131, 0.2);
 }
 
@@ -314,7 +326,7 @@ h1 {
 
 /* PAGE 3: SUSPECTS */
 .suspects-body {
-    background-color: #081421;
+    background-color: var(--background);
     color: white;
     min-height: 100vh;
 }
@@ -529,7 +541,7 @@ h1 {
     padding: 13px 25px;
 
     background-color: #e5bd83;
-    color: #081421;
+    color: var(--background);
     text-decoration: none;
     border-radius: 4px;
 
@@ -747,6 +759,18 @@ h1 {
 
 .close-file:hover{
     background:#f0d08b;
+}
+
+.evidence-photo{
+    width:100%;
+    max-height:250px;
+    object-fit:contain;
+    display:block;
+    margin:20px 0;
+    border:2px solid #bfa46f;
+    border-radius:8px;
+    background:#0f1b2d;
+    padding:10px;
 }
 
 .evidence-page .suspects-navigation{
