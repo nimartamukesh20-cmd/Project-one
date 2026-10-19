@@ -45,6 +45,13 @@ Artificial intelligence tools (ChatGPT) were used for the following:
 - Debugging HTML and CSS issues
 - Troubleshooting CSS sizes and layouts
 
+
+---
+# Future Scope 
+- One part of our project that could be improved is the repeated HTML for our evidence and suspect cards.
+- Many sections share the same structure, so if we expanded the project, we would refactor them into reusable templates or components.
+- We would then test every page again to make sure the layout, responsiveness, and accessibility were unchanged.
+
 ---
 # Authors 
 ## Nimarta 
