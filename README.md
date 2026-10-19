@@ -37,3 +37,23 @@ The project focuses on semantic HTML, responsive layouts, CSS animations, reusab
 - CSS Variables
 - Git
 - GitHub
+
+---
+# AI Assistance 
+Artificial intelligence tools (ChatGPT) were used for the following:
+- Generated an introduction image for a consistent theme
+- Debugging HTML and CSS issues
+- Troubleshooting CSS sizes and layouts
+
+---
+# Authors 
+## Nimarta 
+- Homepage
+- Introduction
+- Suspects Page
+- Corresponding CSS
+## Krishna 
+- Evidence Archive
+- Case Board
+- Final Accusation
+- Corresponding CSS
